@@ -1,4 +1,7 @@
 # incrementalTest
+
+Link to Test: https://pauljgonzalez.github.io/incrementalTest/
+
 This is just mainly to test around making a very basic incremental game. And to improve my web dev skill
 
 Concept is just going to be a basic increase health,defense,attack to beat boss.
