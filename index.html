@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer ></script>
+    <script src="/scripts/main.js" type="module" defer ></script>
     <link rel="stylesheet" href="styles.css">
     <title>Incremental Test</title>
 </head>
@@ -11,69 +11,108 @@
     <div id="mainContainer">
         <div id="heroUI">
             <div class="statsContainer" id="HeroStats">
-                <div class="user" id="hero">User</div>
+                <div class="user largeFont" id="hero">User</div>
                 <div class="stats" id="heroStats">
                     <div class="health individualStatsContainer" id="heroHealths">
-                        <div class="mediumFont">Health</div>
-                        <div class="healthValue smallFont">Current/Max</div>
-                        <div class="mediumFont">Increase Health</div>
-                        <button type="button" class="smallFont" id="increaseHeroHealth">Cost X need span</button>
-                        <div class="mediumFont">Increase Incremental Gain</div>
-                        <button type="button" class="smallFont" id="increaseHeroIncrementalHealth">Cost X need span</button>
-                        <div class="mediumFont">Increase Active Click</div>
-                        <button type="button" class="smallFont" id="increaseHeroActiveHealth">Cost X need span</button>
+                        <div class="wrapper">
+                            <div class="mediumFont">Health</div>
+                            <div class="healthValue smallFont" id="setHeroHealth">Current/Max</div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="mediumFont">Increase Health</div>
+                            <button type="button" class="smallFont" id="increaseHeroHealth">Cost X need span</button>
+                        </div>
+                        <div class="wrapper">
+                            <div class="mediumFont">Increase Incremental Gain</div>
+                            <button type="button" class="smallFont" id="increaseHeroIncrementalHealth">Cost X need span</button>
+                        </div>
+                        <div class="wrapper">
+                            <div class="mediumFont">Increase Active Click</div>
+                            <button type="button" class="smallFont" id="increaseHeroActiveHealth">Cost X need span</button>
+                        </div>
                     </div>
                     <div class="defense" id="heroDefense">
                         <div class="defense individualStatsContainer" id="heroDefenses">
-                        <div class="mediumFont">Defense</div>
-                        <div class="defenseValue smallFont">Current</div>
-                        <div class="mediumFont">Increase Defense</div>
-                        <button type="button" class="smallFont" id="increaseHeroDefense">Cost X need span</button>
-                        <div class="mediumFont">Increase Incremental Gain</div>
-                        <button type="button" class="smallFont" id="increaseHeroIncrementalDefense">Cost X need span</button>
-                        <div class="mediumFont">Increase Active Click</div>
-                        <button type="button" class="smallFont" id="increaseHeroActiveDefense">Cost X need span</button>
+                        <div class="wrapper">
+                            <div class="mediumFont">Defense</div>
+                            <div class="defenseValue smallFont" id="setHeroDefense">Current</div>
+                        </div>
+                        <div class="wrapper">
+                            <div class="mediumFont">Increase Defense</div>
+                            <button type="button" class="smallFont" id="increaseHeroDefense">Cost X need span</button>
+                        </div>
+                        <div class="wrapper">
+                            <div class="mediumFont">Increase Incremental Gain</div>
+                            <button type="button" class="smallFont" id="increaseHeroIncrementalDefense">Cost X need span</button>
+                        </div>
+                        <div class="wrapper">
+                            <div class="mediumFont">Increase Active Click</div>
+                            <button type="button" class="smallFont" id="increaseHeroActiveDefense">Cost X need span</button>
+                        </div>
                     </div>
                     </div>
                         <div class="attack" id="heroAttack">
                             <div class="defense individualStatsContainer" id="heroAttacks">
-                            <div class="mediumFont">Attack</div>
-                            <div class="attackValue smallFont">Current</div>
-                            <div class="mediumFont">Increase Attack</div>
-                            <button type="button" class="smallFont" id="increaseHeroAttack">Cost X need span</button>
-                            <div class="mediumFont">Increase Incremental Gain</div>
-                            <button type="button" class="smallFont" id="increaseHeroIncrementalAttack">Cost X need span</button>
-                            <div class="mediumFont">Increase Active Click</div>
-                            <button type="button" class="smallFont" id="increaseHeroActiveAttack">Cost X need span</button>
+                            <div class="wrapper">
+                                <div class="mediumFont">Attack</div>
+                                <div class="attackValue smallFont" id="setHeroAttack">Current</div>
+                            </div>
+                            <div class="wrapper">
+                                <div class="mediumFont">Increase Attack</div>
+                                <button type="button" class="smallFont" id="increaseHeroAttack">Cost X need span</button>
+                            </div>
+                            <div class="wrapper">
+                                <div class="mediumFont">Increase Incremental Gain</div>
+                                <button type="button" class="smallFont" id="increaseHeroIncrementalAttack">Cost X need span</button>
+                            </div>
+                            <div class="wrapper">
+                                <div class="mediumFont">Increase Active Click</div>
+                                <button type="button" class="smallFont" id="increaseHeroActiveAttack">Cost X need span</button>
+                            </div>
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="versus">VS</div>
+        <div class="versus largeFont">VS</div>
         <div id="enemyUI">
             <div class="statsContainer" id="EnemyStats">
-                <div class="user" id="enemy">Enemy</div>
+                <div class="user largeFont" id="enemy">Enemy</div>
                 <div class="stats" id="enemyStats">
+                    
                     <div class="health individualStatsContainer" id="enemyHealths">
-                        <div class="healthValue">Health</div>
-                        <div class="">Current/Max</div>
+                        <div class="wrapper">
+                            <div class="">Health</div>
+                            <div class="healthValue">Current/Max</div>
+                        </div>
                     </div>
                     <div class="defense" id="heroDefense">
                         <div class="defense individualStatsContainer" id="enemyDefenses">
-                        <div class="">Defense</div>
-                        <div class="defenseValue">Current</div>
+                        <div class="wrapper">
+                            <div class="">Defense</div>
+                            <div class="defenseValue">Current</div>
+                        </div>
                     </div>
                     </div>
                         <div class="attack" id="heroAttack">
                             <div class="defense individualStatsContainer" id="enemyAttacks">
-                            <div class="">Attack</div>
-                            <div class="attackValue">Current</div>
+                            <div class="wrapper">
+                                <div class="">Attack</div>
+                                <div class="attackValue">Current</div>
+                            </div>
                         </div>
                     </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="switchEnemy">
+            <div class="enemySelect">
+                <button type="button" class="enemyButton" id="previousEnemy">Previous Enemy</button>
+            </div>
+            <div class="enemySelect">
+                <button type="button" class="enemyButton" id="nextEnemy">Next Enemy</button>
             </div>
         </div>
         <div id="shopUI">Shop will go here in later Update</div>

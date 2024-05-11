@@ -1,0 +1,5 @@
+
+IDEAS
+--------------------
+Heal by going back to tavern
+After healing go back to last defeated boss

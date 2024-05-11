@@ -1,7 +1,7 @@
-*{
+/* *{
     outline: 1px red solid;
     font-size: 24px;
-}
+} */
 #mainContainer{
     display: flex;
     flex-direction: column;
@@ -24,13 +24,22 @@
 .individualStatsContainer{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 24px;
     text-align: center;
     width: 200px
 }
+.wrapper{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 32px;
+    padding: 10px;
+}
 button{
     font-size: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    border-radius: 16px;
 }
 .versus{
     text-align: center;
@@ -40,18 +49,26 @@ button{
 .healthValue{
     background-color: lightcoral;
     margin-bottom: 16px;
-    
+    width: 90%;
+    align-self: center;
 }
 .defenseValue{
     background-color: lightblue;
     margin-bottom: 16px;
+    width: 90%;
+    align-self: center;
 }
 .attackValue{
     background-color: lightgreen;
     margin-bottom: 16px;
+    width: 90%;
+    align-self: center;
+}
+.largeFont{
+    font-size: 36px;
 }
 .mediumFont{
-    font-size: 28px;
+    font-size: 20px;
 }
 .smallFont{
     font-size: 16px;
@@ -59,9 +76,13 @@ button{
 .containerForEach{
     background-color: gray;
 }
-
-
 #shopUI{
     text-align: center;
     margin-top: 64px;
+}
+.switchEnemy{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 48px;
+    
 }
