@@ -1,6 +1,6 @@
 # incrementalTest
 
-Link to Test: https://pauljgonzalez.github.io/incrementalTest/
+Link to Test: https://pauljgonzalez.github.io/incrementalTestgit/
 
 This is just mainly to test around making a very basic incremental game. And to improve my web dev skill
 
