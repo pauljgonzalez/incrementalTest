@@ -1,0 +1,67 @@
+*{
+    outline: 1px red solid;
+    font-size: 24px;
+}
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+.statsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.individualStatsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    width: 200px
+}
+button{
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+.versus{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.healthValue{
+    background-color: lightcoral;
+    margin-bottom: 16px;
+    
+}
+.defenseValue{
+    background-color: lightblue;
+    margin-bottom: 16px;
+}
+.attackValue{
+    background-color: lightgreen;
+    margin-bottom: 16px;
+}
+.mediumFont{
+    font-size: 28px;
+}
+.smallFont{
+    font-size: 16px;
+}
+.containerForEach{
+    background-color: gray;
+}
+
+
+#shopUI{
+    text-align: center;
+    margin-top: 64px;
+}
