@@ -2,7 +2,7 @@ import {enemyArray} from "./enemyArray.js"
 import {createEnemyList} from "./createEnemies.js"
 import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack} from "./userStats.js"
 import {increaseHealth,increaseDefense,increaseAttack} from "./userIncremental.js"
-import {setHeroHealth,setHeroDefense,setHeroAttack} from "./setUserStats.js"
+import {setHeroHealth,setHeroDefense,setHeroAttack,setHeroGold} from "./setUserStats.js"
 
 
 //Initalize enemy list
@@ -20,4 +20,5 @@ function gameTic(){
     setHeroHealth();
     setHeroDefense();
     setHeroAttack();
+    setHeroGold();
 }
