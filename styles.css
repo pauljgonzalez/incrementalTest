@@ -18,8 +18,9 @@
 .stats{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+    gap: 5%;
 }
 .individualStatsContainer{
     display: flex;
@@ -82,7 +83,21 @@ button{
 }
 .switchEnemy{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 48px;
-    
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    gap: 5%;
+}
+.individualStatsContainer{
+    padding: 10px;
+    border-radius: 32px;
+}
+#heroHealths{
+    background-color: red;
+}
+#heroDefenses{
+    background-color: blue;
+}
+#heroAttacks{
+    background-color: lightgreen;
 }

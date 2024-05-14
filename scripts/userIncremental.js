@@ -24,6 +24,7 @@ export function increaseDefense(){
     let currentDefense = getDefense();
     let newDefense = defenseIncrementalValue + currentDefense;
     let  formattedDefense = newDefense.toFixed(3);
+    //seting back to float
     formattedDefense = parseFloat(formattedDefense);
     setDefense(formattedDefense)
 }

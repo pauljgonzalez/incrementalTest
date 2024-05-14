@@ -12,7 +12,7 @@
         <div id="heroUI">
             <div class="statsContainer" id="HeroStats">
                 <div class="user largeFont" id="hero">User</div>
-                <div class="" id="userGold"></span></div>
+                <div class="mediumFont" id="userGold" style="font-weight: bold;"></span></div>
                 <div class="stats" id="heroStats">
                     <div class="health individualStatsContainer" id="heroHealths">
                         <div class="wrapper">
@@ -85,14 +85,14 @@
                     <div class="health individualStatsContainer" id="enemyHealths">
                         <div class="wrapper">
                             <div class="">Health</div>
-                            <div class="healthValue">Current/Max</div>
+                            <div class="healthValue" id="enemyHealth"></div>
                         </div>
                     </div>
                     <div class="defense" id="heroDefense">
                         <div class="defense individualStatsContainer" id="enemyDefenses">
                         <div class="wrapper">
                             <div class="">Defense</div>
-                            <div class="defenseValue">Current</div>
+                            <div class="defenseValue" id="enemyDefense">Current</div>
                         </div>
                     </div>
                     </div>
@@ -100,7 +100,7 @@
                             <div class="defense individualStatsContainer" id="enemyAttacks">
                             <div class="wrapper">
                                 <div class="">Attack</div>
-                                <div class="attackValue">Current</div>
+                                <div class="attackValue" id="enemyAttack">Current</div>
                             </div>
                         </div>
                     </div>
@@ -111,6 +111,9 @@
         <div class="switchEnemy">
             <div class="enemySelect">
                 <button type="button" class="enemyButton" id="previousEnemy">Previous Enemy</button>
+            </div>
+            <div class="startCombat">
+                <button type="button" class="enemyButton" id="startCombat">Start Combat</button>
             </div>
             <div class="enemySelect">
                 <button type="button" class="enemyButton" id="nextEnemy">Next Enemy</button>
