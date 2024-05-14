@@ -1,4 +1,4 @@
-import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack} from "./userStats.js"
+import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold} from "./userStats.js"
 
 //increase user health 
 let healthIncrementalValue = .008;
