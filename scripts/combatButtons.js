@@ -11,6 +11,7 @@ function previousEnemy() {
     if(getCurrentIndex() === 0){
         return
     }else{
+        ENEMYARRAY.enemies[getCurrentIndex()].currentHP = ENEMYARRAY.enemies[getCurrentIndex()].maxHP
         editEnemyDOM(ENEMYARRAY.enemies[(getCurrentIndex() - 1)]);
         setCurrentEnemy(ENEMYARRAY.enemies[(getCurrentIndex() - 1)]);
         setCurrentIndex(getCurrentIndex() - 1);
@@ -28,6 +29,7 @@ function nextEnemy (){
     if(getCurrentIndex() === enemyArray.getEnemyCount()-1){
         return
         }else{
+        ENEMYARRAY.enemies[getCurrentIndex()].currentHP = ENEMYARRAY.enemies[getCurrentIndex()].maxHP
         editEnemyDOM(ENEMYARRAY.enemies[(getCurrentIndex() + 1)]);
         setCurrentEnemy(ENEMYARRAY.enemies[(getCurrentIndex() + 1)]);
         setCurrentIndex(getCurrentIndex() + 1);

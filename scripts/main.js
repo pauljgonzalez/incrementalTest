@@ -1,4 +1,3 @@
-import {enemyArray} from "./enemyArray.js"
 import {createEnemyList} from "./createEnemies.js"
 import{gameTic} from './incrementalTic.js'
 import{combatTic} from "./combatTic.js"
@@ -10,11 +9,10 @@ import {combatButtonLoad} from "./combatButtons.js"
 allHealthSet()
 allDefenseSet()
 allAttackSet()
-
-combatButtonLoad()
-
 gameTic()
 combatTic()
+combatButtonLoad()
+
 
 setInterval(gameTic, 100)
 setInterval(combatTic, 1000)
