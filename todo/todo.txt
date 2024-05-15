@@ -1,5 +1,20 @@
 TODO
 --------------------
+MVP
+Add functionaliy to gold purchases and show how much it will increase it by
+Add sidebar to shop all upgrade stats
+Get hero name and use that
+Add hero image and enemy image
+Use locatl storage
+Add tarven to heal
+-Remeber last enemy and add a button to go to last enemy
+-will stop combat and reset current enemy HP. Tarven will just be a popup modal
+
+
+COOL THINGS TO DO MAYBE IN NEXT GAME:
+Add shop to purchase items and equipment
+Add inventory system
+Add simple story based text. Make it type letter by letter
 
 
 
@@ -13,4 +28,3 @@ TODO
 
 BUGS
 ---------------------------
-Enemy HP does not reset when switching enemies
