@@ -2,6 +2,19 @@
     outline: 1px red solid;
     font-size: 24px;
 } */
+:root{
+    color-scheme: light dark;
+}
+html{
+    background-color: light-dark(white,black);
+    /* background-color: light-dark(black,white); */
+}
+button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+}
 #mainContainer{
     display: flex;
     flex-direction: column;
@@ -60,7 +73,7 @@ button{
     align-self: center;
 }
 .attackValue{
-    background-color: lightgreen;
+    background-color: #278C15;
     margin-bottom: 16px;
     width: 90%;
     align-self: center;
@@ -87,6 +100,7 @@ button{
     margin-top: 10px;
     position: relative;
     gap: 5%;
+    right: 15px;
 }
 .individualStatsContainer{
     padding: 10px;
@@ -99,5 +113,5 @@ button{
     background-color: blue;
 }
 #heroAttacks{
-    background-color: lightgreen;
+    background-color: green;
 }

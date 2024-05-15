@@ -10,8 +10,7 @@ export function increaseHealth(){
     setHealth(formattedHealth)
 }
 export function getIncrementalHealthValue(){
-    const value = healthIncrementalValue;
-    return value;
+    return healthIncrementalValue;
 }
 export function incrementIncrementalHealthValue(){
     const value = healthIncrementalValue;
@@ -29,8 +28,7 @@ export function increaseDefense(){
     setDefense(formattedDefense)
 }
 export function getIncrementalDefenseValue(){
-    const value = defenseIncrementalValue;
-    return value;
+    return defenseIncrementalValue;
 }
 export function incrementIncrementalDefenseValue(){
     const value = defenseIncrementalValue;
@@ -47,8 +45,7 @@ export function increaseAttack(){
     setAttack(formattedAttack)
 }
 export function getIncrementalAttackValue(){
-    const value = attackIncrementalValue;
-    return value;
+    return attackIncrementalValue;
 }
 export function incrementIncrementalAttackValue(){
     const value = attackIncrementalValue;

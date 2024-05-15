@@ -1,2 +1,16 @@
 TODO
 --------------------
+
+
+
+
+
+
+
+
+
+
+
+BUGS
+---------------------------
+Enemy HP does not reset when switching enemies

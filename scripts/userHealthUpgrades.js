@@ -17,7 +17,6 @@ export function increaseHealthActive(){
     increaseHealth = document.querySelector("#increaseHeroActiveHealth")
     increaseHealth.textContent = `Cost ${increaseActiveCost} Gold`
 }
-
 export function allHealthSet(){
     increaseHealth()
     increaseHealthIncremental()

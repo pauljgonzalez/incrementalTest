@@ -1,7 +1,7 @@
 
 export function editEnemyDOM(enemy){
     const enemyName = document.querySelector("#enemy")
-    const enemyHealth = document.querySelector("#enemyCurrentHealth")
+    const enemyHealth = document.querySelector("#enemyHealth")
     const enemyDefense = document.querySelector("#enemyDefense")
     const enemyAttack = document.querySelector("#enemyAttack")
 

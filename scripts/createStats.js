@@ -1,7 +1,7 @@
 import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold} from "./userStats.js";
 
 export class enemyStats {
-    constructor(hp,def,att,name,minGold,maxGold){
+    constructor(hp,def,att,name,minGold,maxGold,index){
         this.maxHP = hp;
         this.currentHP = hp;
         this.def = def;
@@ -9,6 +9,7 @@ export class enemyStats {
         this.name = name;
         this.minGold = minGold;
         this.maxGold = maxGold;
+        this._index = index;
         this.enemyHealthElement = document.querySelector("#enemyHealth");
         this.enemyAttackElement = document.querySelector("#enemyAttack");
         this.enemyDefenseElement = document.querySelector("#enemyDefense");
@@ -20,7 +21,7 @@ export class enemyStats {
     
     }
     get health() {
-        return this.hp;
+        return this.maxHP;
     }
     get defense() {
         return this.def;
@@ -28,16 +29,24 @@ export class enemyStats {
     get attack() {
         return this.att;
     }
+    get index(){
+        return this._index
+    }
     updateHealthDisplay(){
        this.enemyHealthElement.textContent = `${this.currentHP}/${this.maxHP}`;
        
     }
     takeDamage(){
-        let newHP = (this.currentHP - getAttack()).toFixed(3);
-        let formatHP =  parseFloat(newHP);
-        this.currentHP = formatHP;
-        if (this.currentHP < 0) {
-            this.currentHP = 0;
+        let damage =(getAttack() - this.defense).toFixed(3);
+        if(damage <= 0){
+            this.currentHP = this.currentHP
+        }else{
+            let newHP = (this.currentHP - damage).toFixed(3);
+            let formatHP =  parseFloat(newHP);
+            this.currentHP = formatHP;
+            if (this.currentHP < 0) {
+                this.currentHP = 0;
+            }
         }
         this.updateHealthDisplay();
 
