@@ -23,4 +23,5 @@ export function setCurrentIndex(newIndex){
 editEnemyDOM(currentEnemy)
 export function combatTic(){
     currentEnemy.takeDamage()
+    currentEnemy.giveDamage()
 }

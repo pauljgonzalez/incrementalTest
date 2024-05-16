@@ -1,13 +1,19 @@
-import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold} from "./userStats.js"
+import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold,getMaxHealth,setMaxHealth} from "./userStats.js"
 
 //increase user health 
 let healthIncrementalValue = .008;
 export function increaseHealth(){
+    let maxHealth = getMaxHealth();
+    let newMaxHealth = healthIncrementalValue + maxHealth ;
+    let formattedMaxHealth = newMaxHealth.toFixed(3);
+    formattedMaxHealth = parseFloat(formattedMaxHealth);
+    setMaxHealth(formattedMaxHealth)
     let currentHealth = getHealth();
-    let newHealth = healthIncrementalValue + currentHealth;
-    let  formattedHealth = newHealth.toFixed(3);
-    formattedHealth = parseFloat(formattedHealth);
-    setHealth(formattedHealth)
+    let newCurrentHealth = healthIncrementalValue + currentHealth 
+    let formattedCurrentHealth = newCurrentHealth.toFixed(3);
+    formattedCurrentHealth = parseFloat(formattedCurrentHealth);
+    setHealth(formattedCurrentHealth)
+
 }
 export function getIncrementalHealthValue(){
     return healthIncrementalValue;

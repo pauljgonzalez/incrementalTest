@@ -5,7 +5,7 @@ const heroDefense = document.querySelector("#setHeroDefense")
 const heroAttack = document.querySelector("#setHeroAttack")
 const heroGold = document.querySelector("#userGold")
 export function setHeroHealth(){
-    heroHealth.innerHTML= getMaxHealth()+ " / " + getHealth();
+    heroHealth.innerHTML= getHealth()+ " / " + getMaxHealth();
 }
 export function setHeroDefense(){
     heroDefense.innerHTML= getDefense();

@@ -1,4 +1,4 @@
-import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold} from "./userStats.js";
+import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold,takeDamage} from "./userStats.js";
 
 export class enemyStats {
     constructor(hp,def,att,name,minGold,maxGold,index){
@@ -54,6 +54,9 @@ export class enemyStats {
         if (this.currentHP === 0) {
             this.enemyDefeated();
         }
+    }
+    giveDamage(){
+        takeDamage(this.attack)
     }
     updateAttackDisplay(){
         this.enemyAttackElement.innerHTML = this.att
