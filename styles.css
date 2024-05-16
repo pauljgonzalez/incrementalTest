@@ -5,6 +5,10 @@
 :root{
     color-scheme: light dark;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
 html{
     background-color: light-dark(white,black);
     /* background-color: light-dark(black,white); */
@@ -90,9 +94,9 @@ button{
 .containerForEach{
     background-color: gray;
 }
-#shopUI{
+#tarvenButton{
     text-align: center;
-    margin-top: 64px;
+    margin-top: 10px;
 }
 .switchEnemy{
     display: flex;

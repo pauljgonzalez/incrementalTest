@@ -13,13 +13,11 @@ export function increaseHealth(){
     let formattedCurrentHealth = newCurrentHealth.toFixed(3);
     formattedCurrentHealth = parseFloat(formattedCurrentHealth);
     setHealth(formattedCurrentHealth)
-
 }
 export function getIncrementalHealthValue(){
     return healthIncrementalValue;
 }
-export function incrementIncrementalHealthValue(){
-    const value = healthIncrementalValue;
+export function incrementIncrementalHealthValue(value){
     healthIncrementalValue = healthIncrementalValue + value;
 }
 
