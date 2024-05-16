@@ -10,6 +10,7 @@ export class enemyStats {
         this.minGold = minGold;
         this.maxGold = maxGold;
         this._index = index;
+        this.defeated = false
         this.enemyHealthElement = document.querySelector("#enemyHealth");
         this.enemyAttackElement = document.querySelector("#enemyAttack");
         this.enemyDefenseElement = document.querySelector("#enemyDefense");
@@ -68,12 +69,16 @@ export class enemyStats {
         this.getGold()
         this.currentHP = this.maxHP;
         this.updateHealthDisplay();
+        this.defeated = true
         //TO DO call for combat delay timer 
     }
     getGold(){
         const heroGold = document.querySelector("#userGold")
         const newGold = getGold() + Math.floor(Math.random() * (this.maxGold - this.minGold + 1)) + this.minGold;
         setGold(newGold)
+    }
+    setDefeat(){
+        this.defeat = true
     }
 }
 

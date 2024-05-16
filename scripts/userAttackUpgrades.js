@@ -1,5 +1,7 @@
 import {getHealth, setHealth,getDefense, setDefense,getAttack, setAttack,getGold,setGold} from "./userStats.js"
 
+const INCREASEHEROFLATATTACK = document.querySelector("#increaseHeroAttack")
+
 let increaseAttackCost = 10;
 let increaseIncrementalCost = 25;
 let increaseActiveCost = 30;
@@ -22,3 +24,6 @@ export function allAttackSet(){
     increaseAttackIncremental()
     increaseAttackActive()
 }
+INCREASEHEROFLATATTACK.addEventListener("click",()=>{
+    console.log("increase attack")
+})
